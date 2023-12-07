@@ -83,6 +83,15 @@ img {
 }
 ```
 
+Padding vs Margin 
+- Padding doesn't collapse 
+- Margin collapses by default
+- Use Padding: 
+  - When you want to control the space inside an element, such as adjusting the spacing between a box and the text or other content inside it.
+- Use Margin: 
+  - When you want to create space between elements, ensuring proper spacing and layout separation.
+
+
 ### Continued development
 
 - list styling
@@ -106,6 +115,7 @@ img {
 ## Acknowledgments
 
 [Kevin Powell](https://www.youtube.com/watch?v=TAA89nkEuhw)
+Grace Snow [Understanding When to Use Padding vs. Margin in CSS - FED Mentor](https://fedmentor.dev/posts/padding-margin/)
 
  ## Time estimate 
 

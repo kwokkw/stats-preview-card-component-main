@@ -51,17 +51,21 @@ img {
     --fs: 0.9375rem;
     --fw-400: 400;
     --fw-700: 700;
+
+    --ff-lexend-deca: "Lexend Deca", sans-serif;
+    --ff-inter: "Inter", sans-serif;
 }
 
 /* GENRAL STYLE */
 
 body {
-    font-family: "Lexend Deca", sans-serif;
+    font-family: var(--ff-inter);
     background-color: var(--main-background);
     color: white;
     display: grid;
     place-content: center;
     text-align: center;
+
 }
 
 /* BLOCKS */
@@ -69,9 +73,11 @@ body {
 .card-container {
     max-width: 20rem;
     background-color: var(--card-background);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.text-container {
+    padding: 2.5rem 3rem 1.5rem;
 }
 
 .mix-blend-mode {
@@ -81,15 +87,14 @@ body {
 
 ul {
     list-style: none;
+    margin-top: 2.5rem;
+    display: grid;
+    row-gap: 1.5rem;
 }
 
 .attribution { 
     font-size: 0.6875rem; 
     text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
 }
 
 /* ELEMENTS */
@@ -98,6 +103,23 @@ ul {
     mix-blend-mode: multiply;
 }
 
+h1 {
+    font-weight: var(--fw-700);
+}
+
+.insights {
+    color: var(--accent);
+}
+
+p {
+    color: var(--main-paragraph);
+    margin-top: 1rem;
+}
+
 li span {
     display: block;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
