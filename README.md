@@ -91,6 +91,24 @@ Padding vs Margin
 - Use Margin: 
   - When you want to create space between elements, ensuring proper spacing and layout separation.
 
+The Order of the Items
+
+```css
+.card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+.mix-blend-mode {
+        grid-area: 1/ 2/ 2/ 3;
+}
+
+.text-container {
+        /* grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties. */
+        grid-area: 1/ 1/ 2/ 2;
+}
+```
+
 
 ### Continued development
 
